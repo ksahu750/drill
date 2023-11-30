@@ -79,7 +79,7 @@ docker build -t "drill-build-${USER_ID}" - <<UserSpecificDocker
 FROM drill-build
 RUN rm -f /var/log/faillog /var/log/lastlog
 RUN groupadd --non-unique -g ${GROUP_ID} ${USER_NAME}
-RUN groupmod -g ${DOCKER_GROUP_ID} docker
+#RUN groupmod -g ${DOCKER_GROUP_ID} docker
 RUN useradd -g ${GROUP_ID} -G docker -u ${USER_ID} -k /root -m ${USER_NAME} -d "${DOCKER_HOME_DIR}"
 RUN echo "${USER_NAME} ALL=NOPASSWD: ALL" > "/etc/sudoers.d/drill-build-${USER_ID}"
 ENV HOME "${DOCKER_HOME_DIR}"

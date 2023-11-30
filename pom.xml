@@ -51,8 +51,8 @@
     <shaded.guava.version>28.2-jre</shaded.guava.version>
     <guava.version>30.1.1-jre</guava.version>
     <forkCount>1</forkCount>
-    <parquet.version>1.12.2</parquet.version>
-    <parquet.format.version>2.8.0</parquet.format.version>
+    <parquet.version>1.12.3</parquet.version>
+    <parquet.format.version>2.9.0</parquet.format.version>
     <calcite.groupId>org.apache.calcite</calcite.groupId>
     <calcite.version>1.33.0</calcite.version>
     <avatica.version>1.23.0</avatica.version>
@@ -130,7 +130,7 @@
     <yauaa.version>7.9.0</yauaa.version>
     <log4j.version>2.19.0</log4j.version>
     <aircompressor.version>0.20</aircompressor.version>
-    <iceberg.version>0.12.1</iceberg.version>
+    <iceberg.version>1.3.0</iceberg.version>
     <univocity-parsers.version>2.8.3</univocity-parsers.version>
     <mongo.version>4.3.3</mongo.version>
     <swagger.version>2.1.12</swagger.version>
@@ -176,26 +176,10 @@
 
   <repositories>
     <repository>
-      <id>conjars</id>
-      <name>Conjars</name>
-      <url>https://conjars.org/repo</url>
-      <layout>default</layout>
-      <releases>
-        <enabled>true</enabled>
-        <updatePolicy>never</updatePolicy>
-        <checksumPolicy>fail</checksumPolicy>
-      </releases>
-      <snapshots>
-        <enabled>false</enabled>
-      </snapshots>
-    </repository>
-
-    <repository>
       <id>mapr-releases</id>
       <url>https://repository.mapr.com/maven/</url>
       <releases>
         <enabled>true</enabled>
-        <checksumPolicy>fail</checksumPolicy>
       </releases>
       <snapshots>
         <enabled>false</enabled>
@@ -217,11 +201,6 @@
     <repository>
       <id>jitpack.io</id>
       <url>https://jitpack.io</url>
-    </repository>
-    <repository>
-      <id>splunk-artifactory</id>
-      <name>Splunk Releases</name>
-      <url>https://splunk.jfrog.io/artifactory/ext-releases-local</url>
     </repository>
   </repositories>
 
